@@ -36,4 +36,8 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 python3 manage.py runserver
 
+cp -r /home/codeany/.local/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth
+
+
+
 ------
