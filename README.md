@@ -9,7 +9,7 @@ TOdo
 colours
 font
 wireframe
-
+background image and styling doesn't work right now - figure out
 
 ## Gitpod Reminders
 
