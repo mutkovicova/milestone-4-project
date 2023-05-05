@@ -4,6 +4,11 @@
 
 The purpose of this project is to create a marketplace for Slovak products to be sold to residents in the UK. 
 
+TOdo
+
+colours
+font
+wireframe
 
 
 ## Gitpod Reminders
@@ -38,6 +43,8 @@ python3 manage.py runserver
 
 cp -r /home/codeany/.local/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth
 
+pip3 install django-allauth==0.41.0
+pip3 install 'django<4'
 
 
 ------
