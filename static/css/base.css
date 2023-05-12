@@ -7,7 +7,8 @@ body {
    background-size: cover;
    height: calc(100vh - 164px); 
    color: black;
-   font-family: 'Arial';
+   font-family: 'Lexend', sans-serif;
+   font-weight: 300;
 }
 
 /* from Bulma */
@@ -28,14 +29,14 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #272727;
+    color: #ede7e3;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: #272727;
+    color: #ede7e3;
 }
 
 .shop-now-button:hover,
@@ -44,8 +45,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #748CAB;
+    color: #272727;
 }
 
 .text-black {
