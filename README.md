@@ -4,6 +4,22 @@
 
 The purpose of this project is to create a marketplace for Slovak products to be sold to residents in the UK. 
 
+## User stories
+
+## Design
+
+I designed the site to use fairly neutral colours (with a blue pop of colour) to emulate the more country living feeling that Slovak food evokes in me. The colour scheme can be seen below with hex codes:
+
+![shop colour scheme](/media/readme/colour-palette.png)
+
+The font used is Lexend, as it is a dyslexia friendly font, which means a wider audience can find it easier to navigate the site. The font was sourced from [Google Fonts](https://fonts.google.com/specimen/Lexend?query=lexend).
+
+## Wireframes
+
+Using the design elements, I combined them to keep the site incredibly simple and easy to view for most visitors.
+
+![shop wireframe design](/media/readme/website-wireframe.jpg)
+
 TOdo
 
 colours
