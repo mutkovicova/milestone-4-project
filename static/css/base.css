@@ -3,7 +3,7 @@ html {
 }
 
 body {
-   background: url('/media/homepage-image.jpg') no-repeat center center fixed;
+   background: url('../../media/homepage-image.jpg') no-repeat center center fixed;
    background-size: cover;
    height: calc(100vh - 164px); 
    color: black;
@@ -28,8 +28,13 @@ body {
     width: fit-content;
 }
 
+.btn {
+    background-color: #272727;
+    color:#ede7e3;
+}
+
 .shop-now-button {
-    background: #272727;
+    background-color: #272727;
     color: #ede7e3;
     min-width: 260px;
 }
