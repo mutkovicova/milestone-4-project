@@ -60,7 +60,9 @@ python3 manage.py runserver
 cp -r /home/codeany/.local/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth
 
 pip3 install django-allauth==0.41.0
+
 pip3 install 'django<4'
 
+pip3 install pillow
 
 ------

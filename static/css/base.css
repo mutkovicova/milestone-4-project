@@ -24,6 +24,10 @@ body {
     text-transform: uppercase;
 }
 
+.title-text {
+    background-color: rgba(162, 112, 53, 0.5);
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -34,8 +38,8 @@ body {
 }
 
 .shop-now-button {
-    background-color: #272727;
-    color: #ede7e3;
+    background-color: #272727 !important;
+    color: #ede7e3 !important;
     min-width: 260px;
 }
 
