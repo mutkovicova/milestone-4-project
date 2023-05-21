@@ -22,10 +22,8 @@ Using the design elements, I combined them to keep the site incredibly simple an
 
 TOdo
 
-colours
-font
-wireframe
-background image and styling doesn't work right now - figure out
+create categories in backend - name and friendly name - take from mennu
+create products using csv to json converter and upload
 
 ## Gitpod Reminders
 
