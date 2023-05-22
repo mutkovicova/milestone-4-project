@@ -20,9 +20,12 @@ Using the design elements, I combined them to keep the site incredibly simple an
 
 ![shop wireframe design](/media/readme/website-wireframe.jpg)
 
+## Data model
+
+![data model](/media/readme/data-model.png)
+
 TOdo
 
-create categories in backend - name and friendly name - take from mennu
 create products using csv to json converter and upload
 
 ## Gitpod Reminders
