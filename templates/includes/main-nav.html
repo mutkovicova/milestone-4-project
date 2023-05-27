@@ -16,10 +16,10 @@
                 Refrigerated Goods
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="refrigerated-link">
-                <a href="" class="dropdown-item">Cheese</a>
-                <a href="" class="dropdown-item">Sliced Meats</a>
-                <a href="" class="dropdown-item">Dairy</a>
-                <a href="" class="dropdown-item">All Refrigerated Goods</a>
+                <a href="{% url 'products' %}?category=cheese" class="dropdown-item">Cheese</a>
+                <a href="{% url 'products' %}?category=sliced_meats" class="dropdown-item">Sliced Meats</a>
+                <a href="{% url 'products' %}?category=dairy" class="dropdown-item">Dairy</a>
+                <a href="{% url 'products' %}?category=cheese,sliced_meats,dairy" class="dropdown-item">All Refrigerated Goods</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Baked Goods
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="baked-link">
-                <a href="" class="dropdown-item">Bread</a>
-                <a href="" class="dropdown-item">Desserts</a>
-                <a href="" class="dropdown-item">All Baked Goods</a>
+                <a href="{% url 'products' %}?category=bread" class="dropdown-item">Bread</a>
+                <a href="{% url 'products' %}?category=desserts" class="dropdown-item">Desserts</a>
+                <a href="{% url 'products' %}?category=bread,desserts" class="dropdown-item">All Baked Goods</a>
             </div>
         </li>
 
@@ -39,11 +39,11 @@
                 Pantry
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="pantry-link">
-                <a href="" class="dropdown-item">Drinks</a>
-                <a href="" class="dropdown-item">Pasta &amp; Rice</a>
-                <a href="" class="dropdown-item">Crisps</a>
-                <a href="" class="dropdown-item">Sweets</a>
-                <a href="" class="dropdown-item">All Pantry</a>
+                <a href="{% url 'products' %}?category=drinks" class="dropdown-item">Drinks</a>
+                <a href="{% url 'products' %}?category=pasta_and_rice" class="dropdown-item">Pasta &amp; Rice</a>
+                <a href="{% url 'products' %}?category=crisps" class="dropdown-item">Crisps</a>
+                <a href="{% url 'products' %}?category=sweets" class="dropdown-item">Sweets</a>
+                <a href="{% url 'products' %}?category=drinks,pasta_and_rice,crisps,sweets" class="dropdown-item">All Pantry</a>
             </div>
         </li>
     </ul>
