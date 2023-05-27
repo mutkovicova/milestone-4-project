@@ -44,8 +44,14 @@ body {
 }
 
 .btn-black {
-    background: #272727;
-    color: #ede7e3;
+    background: #272727 !important;
+    color: #ede7e3 !important;
+}
+
+.btn-outline-black {
+    background: #ede7e3;
+    color: #272727 !important;
+    border: 1px solid #272727;
 }
 
 .shop-now-button:hover,
@@ -59,11 +65,11 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #000;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid black;
 }
 
 .overlay {
