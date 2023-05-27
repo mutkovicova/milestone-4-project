@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
+    'bag',
 ]
 
 MIDDLEWARE = [
@@ -69,7 +70,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # needed by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
