@@ -21,7 +21,7 @@
                         </a>
                         {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid" src="https://placehold.co/600x400?text=Image+Coming+Soon" alt="{{ product.name }}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         </a>
                     {% endif %}
                 </div>
@@ -89,5 +89,5 @@
 
 {% block postloadjs %}
 {{ block.super }}
-{% include 'products/templates/products/includes/quantity_input_script.html' %}
+{% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
