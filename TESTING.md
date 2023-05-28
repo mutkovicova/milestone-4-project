@@ -26,7 +26,3 @@ I attempted to resolve this over a 4 hour span but due to time constraints, had 
 ### Use of important for shop now
 
 the shop now button would not display correctly unless I use !important. 
-
-### Update/remove links in bag
-
-Could not get them to render on a new line no matter how much I tried. Will try to fix before deployment but if still here, could not get to work.
