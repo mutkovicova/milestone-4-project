@@ -95,8 +95,14 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
+}
+
+.update-remove-link {
+    display: block;
 }
 
 /* -------------------------------- Media Queries */
