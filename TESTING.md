@@ -26,3 +26,7 @@ I attempted to resolve this over a 4 hour span but due to time constraints, had 
 ### Use of important for shop now
 
 the shop now button would not display correctly unless I use !important. 
+
+### Use of noimage.png
+
+I could not figure out why the template couldn't render the noimage.png correctly. It would respond normally when in the products pages and views, however in bag, it would cause an error and due to time constraints, I just uploaded a no image file to the Django admin directly. Will investigate this later if I have time.
