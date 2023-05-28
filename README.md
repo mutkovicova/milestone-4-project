@@ -149,4 +149,6 @@ pip3 install 'django<4'
 
 pip3 install pillow
 
+pip3 install django-crispy-forms==1.14.0
+
 ------
