@@ -30,3 +30,7 @@ the shop now button would not display correctly unless I use !important.
 ### Use of noimage.png
 
 I could not figure out why the template couldn't render the noimage.png correctly. It would respond normally when in the products pages and views, however in bag, it would cause an error and due to time constraints, I just uploaded a no image file to the Django admin directly. Will investigate this later if I have time.
+
+### Stripe payments integration
+
+Following the walkthrough, I do believe Stripe updated the documentation and in the future, I will make sure to familiarise myself with their recommended route. For the purposes of this project, I have decided to follow the walkthrough code.
