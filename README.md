@@ -153,4 +153,6 @@ pip3 install django-crispy-forms==1.14.0
 
 pip3 install stripe
 
+pip3 install django-countries==7.2.1
+
 ------
