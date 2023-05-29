@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4">What are we buying today?</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <p class="text-muted">Please give us your details below so we can get your order to you soon!</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
