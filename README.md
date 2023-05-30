@@ -92,6 +92,9 @@ Full testing is detailed in the [Testing markdown file](/TESTING.md).
 
 ## Future developments
 
+### Expanding product management page
+
+I'd like to make the product management page more than just an add product site. I'd like it to also have a lookup of products for editing and deleting, and option to add product at the bottom.
 
 ## Deployment
 
