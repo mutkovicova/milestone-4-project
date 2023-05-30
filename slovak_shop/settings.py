@@ -11,7 +11,11 @@ SECRET_KEY = 'django-insecure-=ef(caw&7@0on%)w#emroev+we!fuvq*wunu+qb&oyoj5_^4ld
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['slovak-shop-milestone-4.herokuapp.com/', 'localhost']
+ALLOWED_HOSTS = [
+    'slovak-shop-milestone-4.herokuapp.com/', 
+    'localhost',
+    '8000-mutkovicova-milestone-4-an8dk80zyz.us2.codeanyapp.com',
+    ]
 
 
 INSTALLED_APPS = [
