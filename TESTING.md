@@ -34,3 +34,8 @@ I could not figure out why the template couldn't render the noimage.png correctl
 ### Stripe payments integration
 
 Following the walkthrough, I do believe Stripe updated the documentation and in the future, I will make sure to familiarise myself with their recommended route. For the purposes of this project, I have decided to follow the walkthrough code.
+
+### Deleting an item from database while in basket
+
+A seemingly known bug occurs if a user tries to delete a product from the shop while that product is in the checkout bag. It will trigger a full Django meltdown that says 'No Product found' and refuse to load anything else. 
+Should this happen, Go to DevTools -> Applications -> Cookies -> Session.id and delete the session. This will reset the interface and allow you to continue working.
