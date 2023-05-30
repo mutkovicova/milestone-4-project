@@ -1,0 +1,1 @@
+web: gunicorn slovak_shop.wsgi:application
