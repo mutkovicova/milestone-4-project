@@ -1,0 +1,21 @@
+Hello {{ order.full_name }}
+
+Thank you so much for supporting our business and placing an order on {{ order.date }}.
+
+Your order details are:
+
+Order number: {{ order.order_number }}
+Delivery cost: £{{ order.delivery_cost }}
+Total: £{{ order.grand_total }}
+
+Your order will shortly be on its way as fast as possible to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.postcode }}, {{ order.country }}.
+
+If we really really need to contact you between now and its arrival, we will use your phone number {{ order.phone_number }}.
+
+If you have any questions in the meantime, feel free to contact us on {{ contact_email }}.
+
+Once again, your order means the world to us and we hope you enjoy a taste of Slovak cuisine.
+
+Slovak Shop
+
+P.S. If you make something delicious you think we need to know about, submit it to our blog!
