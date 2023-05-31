@@ -4,26 +4,23 @@
 
 The purpose of this project is to create a marketplace for Slovak products to be sold to residents in the UK. 
 
-[Am I responsive goes here]
-
 ## Users
 
-1. Shopping user
-    1. Add items to a cart
-    2. Pay seamlessly
-    3. Basket to retain my items
-    4. Find items to purchase
+1. Returning user
+    1. Retain my details for future checkout
+    2. Have an order history
+    3. Ability to update my details
 
-2. Browsing user
+2. New user
     1. Find items easily
-    2. See full offering of website
-    3. Sort items
+    2. Add items to cart
+    3. Pay seamlessly
     4. Receive news of new products
 
-3. Contributing user
-    1. Easily submit my recipes
-    2. Browse recipes
-    3. Edit recipes
+3. Administrator
+    1. Add products
+    2. Edit products
+    3. Delete products
 
 ## Design
 
@@ -182,20 +179,3 @@ Alex - I know there are many days where I abandoned you in favour of coding. Tha
 
 James - For coming into my life and giving me that lightbulb moment that made me think about pursuing that thing I've always wanted to do. You may have made life 10x harder, but you've also made it much clearer.
 
-
-
-python3 manage.py runserver
-
-pip3 install django-allauth==0.41.0
-
-pip3 install 'django<4'
-
-pip3 install pillow
-
-pip3 install django-crispy-forms==1.14.0
-
-pip3 install stripe
-
-pip3 install django-countries==7.2.1
-
-------
