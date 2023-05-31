@@ -4,6 +4,30 @@
 
 The purpose of this project is to create a marketplace for Slovak products to be sold to residents in the UK. 
 
+# Table of contents
+
+1. [Users](#users)
+2. [Design](#design)
+3. [Wireframes](#wireframes)
+4. [Features](#features)
+5. [Data model](#data-model)
+6. [Technologies used](#technologies-used)
+7. [Testing](#testing)
+8. [Future developments](#future-developments)
+9. [Deployment](#deployment)
+10. [Acknowledgments](#acknowledgments)
+11. [Thank you](#thank-you)
+
+A quick foreward, if I may, as I write this at 11:59pm - This project has not worked out at all how I envisaged. Through technical difficulties to family commitments to sheer lack of time, I have not given it the care and attention it deserved.
+
+I should've done better. I know it has flaws. And I suspect it won't pass first time.
+
+But I have worked on this too long and I've got it to a place where it's a functioning site. That's as much as I can do. As mentioned further down, I really do want to revisit this site and give it the right level of attention. But for now, I've had to settle for just good enough, as I struggle to fit within deadline.
+
+Hopefully, I have the chance to make much better products further down the line.
+
+Thank you.
+
 ## Users
 
 1. Returning user
@@ -30,11 +54,15 @@ I designed the site to use fairly neutral colours (with a blue pop of colour) to
 
 The font used is Lexend, as it is a dyslexia friendly font, which means a wider audience can find it easier to navigate the site. The font was sourced from [Google Fonts](https://fonts.google.com/specimen/Lexend?query=lexend).
 
+The tone of the entire website is more fun and playful than a regular store ("Uh-oh, something went wrong!" rather than "Error occured" etc). This was with a back story in mind of this being a more local shop that really values its customers and breaks away from the norm.
+
 ### Wireframes
 
 Using the design elements, I combined them to keep the site incredibly simple and easy to view for most visitors.
 
 ![shop wireframe design](/media/readme/website-wireframe.jpg)
+
+The end design is a much more scaled down version with a few elements missing, but I think it delivers the same clean look in the end.
 
 ## Features
 
@@ -54,7 +82,7 @@ Logged in users can edit their details and these details will automatically pull
 
 Administrators have the ability to upload new products, edit existing products or delete them off the site. All this is done via clean interfaces within the website itself and don't require lengthy visits to the admin portal.
 
-### Data model
+## Data model
 
 ![data model](/media/readme/data-model.png)
 
