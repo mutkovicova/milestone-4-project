@@ -48,6 +48,7 @@ body {
 footer {
     background-color: #272727;
     color: #ede7e3;
+    height: calc(100vh - 70px);
 }
 
 .btn {
