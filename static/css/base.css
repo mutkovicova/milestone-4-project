@@ -33,24 +33,6 @@ body {
     width: fit-content;
 }
 
-.footer-heading {
-    font-size: 20px;
-    font-weight: 500;
-    color: #748CAB;
-}
-
-.footer-heading {
-    font-size: small;
-    font-weight: 100;
-    color:#ede7e3;
-}
-
-footer {
-    background-color: #272727;
-    color: #ede7e3;
-    height: calc(100vh - 70px);
-}
-
 .btn {
     background-color: #272727;
     color:#ede7e3;
