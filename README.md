@@ -41,11 +41,21 @@ Using the design elements, I combined them to keep the site incredibly simple an
 
 ## Features
 
-### Products and shopping
+### Products
 
-### Blog
+The site features products from various categories that would be found on other shops such as this one. The products are clearly marked with these categories and have an easy view of the price. When viewed, the product detail offers the option to add the product to a bag and produces a lovely little notification to respond to a users action.
 
-### Newsletter sign up
+### Shopping
+
+The checkout bag features a list of products, as well as the option to increase/decrease quantities. The checkout page then has a simple form for users to fill in, the option to save information for future purchases and an easy pay interface. 
+
+### Accounts
+
+Logged in users can edit their details and these details will automatically pull into the order form when checking out. They can also use the checkout process to override the details they have saved in their profile.
+
+### Admin
+
+Administrators have the ability to upload new products, edit existing products or delete them off the site. All this is done via clean interfaces within the website itself and don't require lengthy visits to the admin portal.
 
 ### Data model
 
@@ -92,13 +102,71 @@ Full testing is detailed in the [Testing markdown file](/TESTING.md).
 
 ## Future developments
 
+There are many, many things I would like to have been able to do on this project. From simple tinkers to the CSS to some basic functionality or custom pages like blog and newsletter signup in footer. However, due to time constraints and constant issues with the tech, I just ran out of time and energy. 
+The design I created at the start does NOT reflect the site I have created, but it is the best I could do. 
+
+I would love to come back to this project one day and really build it up to be something that could fool someone into believing it's a real store. 
+
+However, some specific areas that really would make this site wonderful are:
+
 ### Expanding product management page
 
 I'd like to make the product management page more than just an add product site. I'd like it to also have a lookup of products for editing and deleting, and option to add product at the bottom.
 
+### Footer
+
+I ran out of time and energy to create a footer that would display a bit about the shop and also a bit of a blurb about the project being educational.
+
 ## Deployment
 
+### Heroku
 
+1. Generate requirements.txt file using:  
+pip freeze --local > requirements.txt
+
+2. install gunicorn with pip3 install gunicorn
+ 
+3. Create a new file with the name Procfile and the content of  
+web: gunicorn slovak_shop.wsgi:application
+  
+4. Change Development to FALSE and Debug to FALSE within settings.py
+  
+5. (if applicable) Navigate to Heroku and create account
+    - Click on New and go to Create New App in top right
+6. Choose a unique name and choose the Europe region
+7. Go to Reveal Config Vars
+    1. Navigate back to ElephantSQL and copy the Database URL in your created instance
+    2. In Config Vars, add a new one with DATABASE_URL as key and the URL from ElephantSQL as value
+    3. Use all other values from settings.py, including your secret key, stripe keys, AWS key and any other values you may need.
+8. Navigate back to the app interface and click on Open App in the top right
+
+All done!
+
+### [ElephantSQL]
+
+1. Create account with ElephantSQL
+2. Link GitHub repositories with ElephantSQL
+3. Create new instance and name it similarly
+4. Choose region close to you (I chose Ireland EU West)
+5. All done!
+
+### [AWS](https://aws.amazon.com/)
+
+1. Create an account
+2. Once you're through creating all the necessary credentials, navigate to search bar/Browse button.
+3. Search/find S3
+4. Click on Create Bucket
+5. Name your bucket similar to the project name
+6. Any option that gives public access to the repository, tick it
+7. When necessary to create policy, select S3 and paste in the heroku URL to "Response" (I may remember that part wrong!)
+8. Once created, navigate to User Groups on the left
+9. Create a group with admin rights, applying the policy from the bucket and name appropriately
+10. Once group is created, add any users you want to have access to the site (mainly yourself)
+11. Create folders in bucket for static/ and media/
+12. Navigate to the bucket landing page and find the key
+13. Reveal and copy over to Heroku's Config Vars.
+
+All done!
 
 ## Acknowledgments
 
@@ -114,37 +182,9 @@ Alex - I know there are many days where I abandoned you in favour of coding. Tha
 
 James - For coming into my life and giving me that lightbulb moment that made me think about pursuing that thing I've always wanted to do. You may have made life 10x harder, but you've also made it much clearer.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 python3 manage.py runserver
-
-cp -r /home/codeany/.local/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth
 
 pip3 install django-allauth==0.41.0
 
