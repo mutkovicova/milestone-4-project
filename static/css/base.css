@@ -3,7 +3,7 @@ html {
 }
 
 body {
-   background: url('/../../media/homepage-image.jpg') no-repeat center center fixed;
+   background: url('/media/homepage-image.jpg') no-repeat center center fixed;
    background-size: cover;
    height: calc(100vh - 164px); 
    color: #272727;
@@ -25,7 +25,8 @@ body {
 }
 
 .title-text {
-    background-color: rgba(162, 112, 53, 0.5);
+    background-color: rgba(162, 112, 53, 0.75);
+    padding: 30px;
 }
 
 .main-logo-link {
