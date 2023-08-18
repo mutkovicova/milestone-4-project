@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'profiles',
     'storages',
+    'faq',
 ]
 
 MIDDLEWARE = [
@@ -191,3 +192,11 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# FAQ Modal
+
+FAQ_SETTINGS = ['no_category_description',
+                'logged_in_users_can_add_question',
+                'no_comments',
+                'no_answer_votes',
+                ]
