@@ -1,28 +1,13 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
-{% endblock %}
-
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
-
+{% extends 'faq/base.html' %}
+{% block title %}FAQ | Choose Question{% endblock %}
+{% block heading %}Choose a FAQ Question{% endblock %}
 {% block content %}
-
-<h1>choose a FAQ Question</h1>
 {% for question in questions %}
-<h3><a href="{% url 'faq:question_detail' question.slug %}">{{question.question}}</a></h3>
+    <h3><a href="{% url 'faq:question_detail' question.slug %}">{{question.question}}</a></h3>
 {% endfor %}
 
 {% if can_add_question %}
-<hr>
-<a href="{% url 'faq:add_question' %}">add question</a>
+    <hr>
+    <a href="{% url 'faq:add_question' %}">add question</a>
 {% endif %}
-
 {% endblock %}

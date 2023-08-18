@@ -1,27 +1,11 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends 'faq/question_base.html' %}
 
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
-{% endblock %}
-
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
-
-{% block content %}
+{% block question_content %}
 <h1>Post A Comment</h1>
-<a href="{{question.get_absolute_url}}">
-    <h3>{{question.question}}</h3>
-</a>
+<a href="{{question.get_absolute_url}}"><h3>{{question.question}}</h3></a>
 <form method="post">
     {% csrf_token %}
     {{form}}
     <input type="submit">
 </form>
-
 {% endblock %}

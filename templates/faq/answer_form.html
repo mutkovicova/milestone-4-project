@@ -1,0 +1,11 @@
+{% extends 'faq/base.html' %}
+{% block title %}FAQ | Answer Question{% endblock %}
+{% block heading %}Answer Question{% endblock %}
+{% block content %}
+<a href="{{question.get_absolute_url}}"><h2>{{question.question}}</h2></a>
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit">
+</form>
+{% endblock %}
