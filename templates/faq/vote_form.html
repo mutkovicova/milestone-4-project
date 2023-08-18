@@ -1,7 +1,7 @@
 {% extends 'faq/faq_base.html' %}
 {% block title %}FAQ | Vote{% endblock %}
 {% block heading %}Vote{% endblock %}
-{% block content %}
+{% block faq_content %}
 <form method="post">
     {% csrf_token %}
     {{form}}
