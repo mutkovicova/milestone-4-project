@@ -27,3 +27,4 @@ stripe==5.4.0
 typing_extensions==4.6.2
 urllib3==1.26.16
 django-easy-faq==1.6
+django-contact-us==1.1.0
