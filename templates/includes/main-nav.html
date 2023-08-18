@@ -1,7 +1,8 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -13,19 +14,22 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="refrigerated-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="refrigerated-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Refrigerated Goods
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="refrigerated-link">
                 <a href="{% url 'products' %}?category=cheese" class="dropdown-item">Cheese</a>
                 <a href="{% url 'products' %}?category=sliced_meats" class="dropdown-item">Sliced Meats</a>
                 <a href="{% url 'products' %}?category=dairy" class="dropdown-item">Dairy</a>
-                <a href="{% url 'products' %}?category=cheese,sliced_meats,dairy" class="dropdown-item">All Refrigerated Goods</a>
+                <a href="{% url 'products' %}?category=cheese,sliced_meats,dairy" class="dropdown-item">All Refrigerated
+                    Goods</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="baked-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="baked-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Baked Goods
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="baked-link">
@@ -36,7 +40,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="pantry-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="pantry-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Pantry
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="pantry-link">
@@ -44,8 +49,15 @@
                 <a href="{% url 'products' %}?category=pasta_and_rice" class="dropdown-item">Pasta &amp; Rice</a>
                 <a href="{% url 'products' %}?category=crisps" class="dropdown-item">Crisps</a>
                 <a href="{% url 'products' %}?category=sweets" class="dropdown-item">Sweets</a>
-                <a href="{% url 'products' %}?category=drinks,pasta_and_rice,crisps,sweets" class="dropdown-item">All Pantry</a>
+                <a href="{% url 'products' %}?category=drinks,pasta_and_rice,crisps,sweets" class="dropdown-item">All
+                    Pantry</a>
             </div>
+        </li>
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'faq:index_view' %}"
+                id="contact-link">
+                Contact
+            </a>
         </li>
     </ul>
 </div>

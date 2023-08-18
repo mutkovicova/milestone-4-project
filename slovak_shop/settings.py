@@ -200,4 +200,5 @@ FAQ_SETTINGS = ['no_category_description',
                 'logged_in_users_can_add_question',
                 'no_comments',
                 'no_answer_votes',
+                'logged_in_users_can_answer_question',
                 ]
