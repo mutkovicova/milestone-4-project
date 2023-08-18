@@ -6,15 +6,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = 'django-insecure-=ef(caw&7@0on%)w#emroev+we!fuvq*wunu+qb&oyoj5_^4ld'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'slovak-shop-milestone-4.herokuapp.com',
     'localhost',
     '8000-mutkovicova-milestone-4-an8dk80zyz.us2.codeanyapp.com',
+    '8000-mutkovicova-milestone4p-bwrzpv63x1p.ws-eu104.gitpod.io',
     ]
 
 
