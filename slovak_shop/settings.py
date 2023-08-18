@@ -207,3 +207,14 @@ FAQ_SETTINGS = ['no_category_description',
 # Contact us modal
 
 CONTACT_US_EMAIL = 'fakeslovakshop@gmail.com'
+
+CONTACTUS_SUBJECT_CHOICES = (
+    ('-----', '-----'),
+    ('info', 'Request more information'),
+    ('order', 'I have a problem with my order'),
+    ('shipping', 'Where is my item?'),
+    ('newsletter', 'I want to sign up to the newsletter'),
+    ('other', 'Other (please specify)')
+)
+
+SERVER_EMAIL = os.environ.get('EMAIL_HOST_USER')
