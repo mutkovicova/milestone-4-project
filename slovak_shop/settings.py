@@ -6,15 +6,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = 'django-insecure-=ef(caw&7@0on%)w#emroev+we!fuvq*wunu+qb&oyoj5_^4ld'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'slovak-shop-milestone-4.herokuapp.com',
     'localhost',
     '8000-mutkovicova-milestone-4-an8dk80zyz.us2.codeanyapp.com',
+    '8000-mutkovicova-milestone4p-bwrzpv63x1p.ws-eu104.gitpod.io',
     ]
 
 
@@ -36,6 +37,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'profiles',
     'storages',
+    'faq',
 ]
 
 MIDDLEWARE = [
@@ -191,3 +193,11 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# FAQ Modal
+
+FAQ_SETTINGS = ['no_category_description',
+                'logged_in_users_can_add_question',
+                'no_comments',
+                'no_answer_votes',
+                ]

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<h3>comments</h3>
+<ul>
+    {% for comment in question.faqcomment_set.all %}
+    <li>
+        <h4>{{comment.comment}}</h4>
+        posted by {% if comment.user%}{{comment.user}}{% else %}anonymous{% endif %} {{comment.post_time|timesince}} ago
+    </li>
+    {% endfor %}
+</ul>
+{% if add_new_comment_allowed %}
+{% if category_enabled %}
+<form method="post" action="{% url 'faq:add_comment' question.category.slug question.slug %}">
+    {% else %}
+    <form method="post" action="{% url 'faq:add_comment' question.slug %}">
+        {% endif %}
+        <fieldset>
+            <legend>Post Your Comment Here:</legend>
+            {% csrf_token %}
+            {{comment_form}}
+            <input type="submit" name="post">
+        </fieldset>
+    </form>
+    {% endif %}
+
+    {% endblock %}
