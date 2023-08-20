@@ -202,3 +202,5 @@ FAQ_SETTINGS = ['no_category_description',
                 'no_answer_votes',
                 'logged_in_users_can_answer_question',
                 ]
+
+# Contact form

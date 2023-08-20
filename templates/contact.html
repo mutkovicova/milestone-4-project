@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/faq.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="faq-content">
+    <h2>Do you have a question for us?</h2>
+    <p>Fill in the form below and we'll get back to you as soon as we can!</p>
+    <form action="/contact/" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="fieldWrapper">
+            {{ field.errors }}
+            {{ field.label_tag }} {{ field }}
+        </div>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}

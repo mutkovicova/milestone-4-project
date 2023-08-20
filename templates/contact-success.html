@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/faq.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="faq-content">
+    <h2>Your question is on its way to us!</h2>
+    <p>We will aim to get back to you within 2 business days! In the meantime, why not go back to our homepage and dream
+        of your next purchase?</p>
+    <a href="{% url 'home' %}" class="btn  btn-black rounded-1 text-uppercase active" role="button"
+        aria-pressed="true">Back to home</a>
+</div>
+{% endblock %}

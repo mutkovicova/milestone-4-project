@@ -177,6 +177,9 @@ a.category-badge>span.badge:hover {
     overflow-y: auto;
 }
 
+.contact-form {
+    margin-top: 164px;
+}
 
 /* -------------------------------- Media Queries */
 
