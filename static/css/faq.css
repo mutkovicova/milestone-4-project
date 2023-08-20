@@ -1,3 +1,7 @@
+body {
+    background-color: white !important;
+}
+
 .faq-content {
     padding: 5rem;
     margin-top: 80px;
