@@ -14,6 +14,7 @@ def contact(request):
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
 
+
 def success(request):
     messages.success(request, "We've got your note!")
     return render(request, 'contact-success.html')
