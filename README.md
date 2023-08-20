@@ -1,10 +1,14 @@
 # Milestone 4 project - Slovak shop
 
+[Live site on Heroku](https://slovak-shop-milestone-4.herokuapp.com/)
+
 ## Purpose
 
-The purpose of this project is to create a marketplace for Slovak products to be sold to residents in the UK. 
+The purpose of this project is to create a marketplace for Slovak products to be sold to residents in the UK.  
 
-# Table of contents
+![Am I Responsive screenshot of website on many sizes](/media/testing/amiresponsive-slovakshop-screenshot.png)
+
+## Table of contents
 
 1. [Users](#users)
 2. [Design](#design)
@@ -18,33 +22,35 @@ The purpose of this project is to create a marketplace for Slovak products to be
 10. [Acknowledgments](#acknowledgments)
 11. [Thank you](#thank-you)
 
-A quick foreward, if I may, as I write this at 11:59pm - This project has not worked out at all how I envisaged. Through technical difficulties to family commitments to sheer lack of time, I have not given it the care and attention it deserved.
-
-I should've done better. I know it has flaws. And I suspect it won't pass first time.
-
-But I have worked on this too long and I've got it to a place where it's a functioning site. That's as much as I can do. As mentioned further down, I really do want to revisit this site and give it the right level of attention. But for now, I've had to settle for just good enough, as I struggle to fit within deadline.
-
-Hopefully, I have the chance to make much better products further down the line.
-
-Thank you.
-
 ## Users
 
 1. Returning user
     1. Retain my details for future checkout
+        The user is able to both re-use previous data they have used if registered on the site. A future development could be the use of multiple addresses - billing and delivery.
     2. Have an order history
+        The order history is clear. The user has an easy way to navigate to past orders and review them.
     3. Ability to update my details
+        The user is able to edit their profile and the information the store hold on them - including deleting useless information.
+
+In general, as a returning user, it would be useful to implement more features that would keep people on the site - such as wishlist function, in stock alerts, etc.
 
 2. New user
     1. Find items easily
+        The products are clearly categorised and are sortable. In the future, a "if you like this product, you may be interested in this" would be a good addition.
     2. Add items to cart
+        A user is prompted to add items to cart and is able to do so with the fewest clicks possible.
     3. Pay seamlessly
+        The payment process is incredibly simple to understand, is secure, and a user feels no hesitation to pay.
     4. Receive news of new products
+        A user can sign up to a newsletter that will keep them up to date on new items on the store. In the future, this would include alerts for out-of-stock items and the ability to vote on products that should be restocked.
 
 3. Administrator
     1. Add products
+        An administrator can easily add new items to the store.
     2. Edit products
-    3. Delete products
+        If needed, an administrator, while logged into the site, can visually edit the details of the product.
+    3. Delete products 
+        If necessary, an administrator can delete a product. This is verified by the system to prevent accidental deletion.
 
 ## Design
 
@@ -60,7 +66,9 @@ The tone of the entire website is more fun and playful than a regular store ("Uh
 
 Using the design elements, I combined them to keep the site incredibly simple and easy to view for most visitors.
 
-![shop wireframe design](/media/readme/website-wireframe.jpg)
+![shop wireframe design desktop](/media/readme/website-wireframe.jpg)
+
+![shop wireframe design mobile](/media/readme/website-mobile-wireframe.jpg)
 
 The end design is a much more scaled down version with a few elements missing, but I think it delivers the same clean look in the end.
 
@@ -72,11 +80,19 @@ The site features products from various categories that would be found on other 
 
 ### Shopping
 
-The checkout bag features a list of products, as well as the option to increase/decrease quantities. The checkout page then has a simple form for users to fill in, the option to save information for future purchases and an easy pay interface. 
+The checkout bag features a list of products, as well as the option to increase/decrease quantities. The checkout page then has a simple form for users to fill in, the option to save information for future purchases and an easy pay interface.  
 
 ### Accounts
 
 Logged in users can edit their details and these details will automatically pull into the order form when checking out. They can also use the checkout process to override the details they have saved in their profile.
+
+### FAQs
+
+The FAQs on this site are simple and can be answered by a logged in user. In the backend, these answers can be deleted and replaced by administrators however in the short term, are useful as a way to ensure answers quickly.
+
+### Contact Form
+
+If a user does not find an answer to their question in the FAQs, they have the option to ask a custom question directly to the administrators' email.
 
 ### Admin
 
@@ -120,18 +136,13 @@ Django was used for all its apps and e-commerce functionality.
 
 Google Fonts was used to implement a custom font for the whole project for better accessibility.
 
-
 ## Testing
 
 Full testing is detailed in the [Testing markdown file](/TESTING.md).
 
 ## Future developments
 
-There are many, many things I would like to have been able to do on this project. From simple tinkers to the CSS to some basic functionality or custom pages like blog and newsletter signup in footer. However, due to time constraints and constant issues with the tech, I just ran out of time and energy. 
-The design I created at the start does NOT reflect the site I have created, but it is the best I could do. 
-
-I would love to come back to this project one day and really build it up to be something that could fool someone into believing it's a real store. 
-
+This project could benefit from a good thorough re-write due to some outdated technologies within the CI walkthrough.
 However, some specific areas that really would make this site wonderful are:
 
 ### Expanding product management page
@@ -140,7 +151,11 @@ I'd like to make the product management page more than just an add product site.
 
 ### Footer
 
-I ran out of time and energy to create a footer that would display a bit about the shop and also a bit of a blurb about the project being educational.
+A footer that could provide a secondary navigation across the site and link to areas such as Privacy Policy etc would be essential to a live site.
+
+### Receive news of new products
+
+I would love an ability which would notify users if a favourite product of theirs came back in stock, or would automatically scrape their previous views and notify them of new stock.
 
 ## Deployment
 
@@ -150,7 +165,7 @@ I ran out of time and energy to create a footer that would display a bit about t
 pip freeze --local > requirements.txt
 
 2. install gunicorn with pip3 install gunicorn
- 
+
 3. Create a new file with the name Procfile and the content of  
 web: gunicorn slovak_shop.wsgi:application
   
@@ -206,4 +221,3 @@ Ariela - Without you, I literally would never have completed this course. Thank 
 Alex - I know there are many days where I abandoned you in favour of coding. Thank you for being supportive and reminding me every day that I am doing this to give us all a better life, not just me.
 
 James - For coming into my life and giving me that lightbulb moment that made me think about pursuing that thing I've always wanted to do. You may have made life 10x harder, but you've also made it much clearer.
-
