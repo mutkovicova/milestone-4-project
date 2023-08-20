@@ -331,4 +331,12 @@ a.category-badge>span.badge:hover {
     .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .faq-content {
+        max-width: 80%;
+    }
 }

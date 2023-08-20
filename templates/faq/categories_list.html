@@ -1,6 +1,7 @@
 {% extends 'faq/faq_base.html' %}
-{% block heading %}Select a FAQ category{% endblock %}
+{% block heading %}Frequently asked questions{% endblock %}
 {% block faq_content %}
+<p>Select a category to find out more</p>
 {% for category in categories %}
 <h3><a href="{% url 'faq:category_detail' category.slug %}">{{category.name}}</a></h3>
 {% if category.description %}
