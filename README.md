@@ -49,7 +49,7 @@ In general, as a returning user, it would be useful to implement more features t
         An administrator can easily add new items to the store.
     2. Edit products
         If needed, an administrator, while logged into the site, can visually edit the details of the product.
-    3. Delete products 
+    3. Delete products
         If necessary, an administrator can delete a product. This is verified by the system to prevent accidental deletion.
 
 ## Design

@@ -1,7 +1,7 @@
 # Testing for Milestone 4 project - Slovak shop  
 
 1. [Continuous testing](#continuous-testing)
-2. [User story testing](#user-testing)
+2. [User story testing](#user-story-testing)
     1. [Returning user](#returning-user)
     2. [New user](#new-user)
     3. [Administrator](#administrator)
