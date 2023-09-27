@@ -30,4 +30,5 @@ urlpatterns = [
     path('faq/', include('faq.urls')),
     path('contact/', contact, name='contact'),
     path('contact/success/', success, name='contact-success'),
+    path('partners/', include('partners.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
