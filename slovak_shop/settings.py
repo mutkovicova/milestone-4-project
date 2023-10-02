@@ -15,7 +15,7 @@ ALLOWED_HOSTS = [
     'slovak-shop-milestone-4.herokuapp.com',
     'localhost',
     '8000-mutkovicova-milestone-4-an8dk80zyz.us2.codeanyapp.com',
-    '8000-mutkovicova-milestone4p-bwrzpv63x1p.ws-eu104.gitpod.io',
+    '8000-mutkovicova-milestone4p-bwrzpv63x1p.ws-eu105.gitpod.io',
     ]
 
 
