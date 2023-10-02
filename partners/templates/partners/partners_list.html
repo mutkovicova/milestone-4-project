@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<h2> Wonder who helps us make this happen?</h2>
+<table>
+    {% for partner in partners %}
+    <tr>
+        <td>{{ partner.name }}</td>
+        <td>{{ partner.location }}</td>
+    </tr>
+    {% empty %}
+    <tr>
+        <td>We will update this list soon!</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
