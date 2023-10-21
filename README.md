@@ -15,12 +15,13 @@ The purpose of this project is to create a marketplace for Slovak products to be
 3. [Wireframes](#wireframes)
 4. [Features](#features)
 5. [Data model](#data-model)
-6. [Technologies used](#technologies-used)
-7. [Testing](#testing)
-8. [Future developments](#future-developments)
-9. [Deployment](#deployment)
-10. [Acknowledgments](#acknowledgments)
-11. [Thank you](#thank-you)
+6. [Custom models](#custom-models)
+7. [Technologies used](#technologies-used)
+8. [Testing](#testing)
+9. [Future developments](#future-developments)
+10. [Deployment](#deployment)
+11. [Acknowledgments](#acknowledgments)
+12. [Thank you](#thank-you)
 
 ## Users
 
@@ -101,6 +102,16 @@ Administrators have the ability to upload new products, edit existing products o
 ## Data model
 
 ![data model](/media/readme/data-model.png)
+
+## Custom models
+
+### Contact form
+
+The site uses a custom designed contact form, using the Django forms with custom fields. This allows the future shop to be editable and the form to be expanded, just by amending the forms.py, views.py and contact.html files within the slovak_shop directory.
+
+### Partners
+
+A custom model was created from the Django models for Partners. This creates a list of partners to the shop and lets the admin of the shop add partners, where they're located and which products they stock/provide for the online shop.
 
 ## Technologies used
 
