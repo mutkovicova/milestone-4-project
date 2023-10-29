@@ -16,12 +16,13 @@ The purpose of this project is to create a marketplace for Slovak products to be
 4. [Features](#features)
 5. [Data model](#data-model)
 6. [Custom models](#custom-models)
-7. [Technologies used](#technologies-used)
-8. [Testing](#testing)
-9. [Future developments](#future-developments)
-10. [Deployment](#deployment)
-11. [Acknowledgments](#acknowledgments)
-12. [Thank you](#thank-you)
+7. [Borrowed code](#borrowed-code)
+8. [Technologies used](#technologies-used)
+9. [Testing](#testing)
+10. [Future developments](#future-developments)
+11. [Deployment](#deployment)
+12. [Acknowledgments](#acknowledgments)
+13. [Thank you](#thank-you)
 
 ## Users
 
@@ -111,7 +112,23 @@ The site uses a custom designed contact form, using the Django forms with custom
 
 ### Partners
 
-A custom model was created from the Django models for Partners. This creates a list of partners to the shop and lets the admin of the shop add partners, where they're located and which products they stock/provide for the online shop.
+A custom model was created from the Django models for Partners. This creates a list of partners to the shop and lets the admin of the shop add partners, where they're located and which products they stock/provide for the online shop. This can be accessed by admin by logging onto /partners and amending by logging on to the admin dashboard. 
+
+The purpose of this, for the future, is to allow the shop to publish its suppliers and link back to their pages to increase SEO.
+
+### Team
+
+A custom model was created from the Django models for Team. This allows the shop to have a comprehensive list of all the people that make things happen, and therefore be able to keep track of who needs access etc. by logging on via /team and adding people to the list via the admin dashboard.
+
+The purpose of this, for the future, is to let the shop publish its team member profiles to delegate responsibility for various contact.
+
+## Borrowed code
+
+As well as the code from the walkthrough project [Boutique Ado](https://github.com/ckz8780/boutique_ado_v1), this app includes an externally created app as detailed below.
+
+### Frequently asked questions
+
+An external FAQ Django app was imported to facilitate a more complex FAQ. This means that users who are logged on, but aren't admin, are able to answer questions, allowing the team in charge to free up their time (with proper oversight). Full credit for all the work in this app goes to the [author Smark-1](https://github.com/smark-1/django-easy-faq) . The app was modified to suit the language of the website better and has excluded some functionality as detailed in their [setup instructions](https://pypi.org/project/django-easy-faq/). 
 
 ## Technologies used
 
