@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2> Wonder who works behind the scenes?</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Job title</th>
+                <th scope="col">Year joined</th>
+            </tr>
+        </thead>
+        {% for team in teams %}
+        <tr>
+            <td>{{ team.name }}</td>
+            <td>{{ team.job_title }}</td>
+            <td>{{ team.year_joined }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td>We will update this list soon!</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
