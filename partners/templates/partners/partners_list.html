@@ -12,18 +12,27 @@
 {% endblock %}
 
 {% block content %}
-<h2> Wonder who helps us make this happen?</h2>
-<table>
-    {% for partner in partners %}
-    <tr>
-        <td>{{ partner.name }}</td>
-        <td>{{ partner.location }}</td>
-        <td>{{ partner.products }}</td>
-    </tr>
-    {% empty %}
-    <tr>
-        <td>We will update this list soon!</td>
-    </tr>
-    {% endfor %}
-</table>
+<div class="container">
+    <h2> Wonder who helps us make this happen?</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Products</th>
+            </tr>
+        </thead>
+        {% for partner in partners %}
+        <tr>
+            <td>{{ partner.name }}</td>
+            <td>{{ partner.location }}</td>
+            <td>{{ partner.products }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td>We will update this list soon!</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
 {% endblock %}
